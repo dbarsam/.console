@@ -91,16 +91,7 @@
 	</mouse>
 	<tabs>
 		<tab title="Console" icon="%WORKDIR%\dotfiles\.console\icons\comspec.ico">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.cmd\profile.cmd&quot;&quot;" init_dir="%WORKDIR%"/>
-			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
-				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="0" r="0" g="0" b="0"/>
-				</image>
-			</background>
-		</tab>
-		<tab title="Visual Studio x86 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico">
-			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\vcvarsall.bat&quot;&quot; x86" init_dir="%WORKDIR%"/>
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; default" init_dir="%WORKDIR%"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -109,7 +100,16 @@
 			</background>
 		</tab>
 		<tab title="Visual Studio x64 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico">
-			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\vcvarsall.bat&quot;&quot; x64" init_dir="%WORKDIR%"/>
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x86" init_dir="%WORKDIR%"/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		<tab title="Visual Studio x86 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x64" init_dir="%WORKDIR%"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -127,7 +127,7 @@
 			</background>
 		</tab>
 		<tab title="Visual Studio x86 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico">
-			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat&quot;&quot; x86" init_dir="%WORKDIR%"/>
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 x86" init_dir="%WORKDIR%"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -136,7 +136,7 @@
 			</background>
 		</tab>
 		<tab title="Visual Studio x64 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico">
-			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat&quot;&quot; amd64" init_dir="%WORKDIR%"/>
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 amd64" init_dir="%WORKDIR%"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -154,7 +154,7 @@
 			</background>
 		</tab>
 		<tab title="Xbox 360" icon="%WORKDIR%\dotfiles\.console\icons\XDK.ico">
-			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Xbox 360 SDK\bin\win32\xdkenv.bat&quot;&quot;" init_dir="%WORKDIR%"/>
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; xdk" init_dir="%WORKDIR%"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">

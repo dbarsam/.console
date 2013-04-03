@@ -24,8 +24,8 @@
 		<font name="Lucida Console" size="8" bold="0" italic="0" smoothing="2">
 			<color use="0" r="0" g="0" b="0"/>
 		</font>
-		<window title="Console" icon="" use_tab_icon="1" use_console_title="1" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="20"/>
-		<controls show_menu="0" show_toolbar="0" show_statusbar="0" show_tabs="1" hide_single_tab="1" show_scrollbars="1"/>
+		<window title="Console" icon="" use_tab_icon="1" use_console_title="1" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="20" trim_tab_titles_right="0"/>
+		<controls show_menu="0" show_toolbar="0" show_statusbar="0" show_tabs="1" hide_single_tab="1" show_scrollbars="1" tabs_on_bottom="0" flat_scrollbars="0"/>
 		<styles caption="1" resizable="1" taskbar_button="1" border="1" inside_border="2" tray_icon="1">
 			<selection_color r="255" g="255" b="255"/>
 		</styles>
@@ -33,7 +33,7 @@
 		<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0"/>
 	</appearance>
 	<behavior>
-		<copy_paste copy_on_select="1" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0"/>
+		<copy_paste copy_on_select="1" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0" sensitive_copy="1"/>
 		<scroll page_scroll_rows="0"/>
 		<tab_highlight flashes="3" stay_highligted="1"/>
 	</behavior>
@@ -90,8 +90,8 @@
 		</actions>
 	</mouse>
 	<tabs>
-		<tab title="Console" icon="%WORKDIR%\dotfiles\.console\icons\comspec.ico">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; default" init_dir="%WORKDIR%"/>
+		<tab title="Console" icon="%WORKDIR%\dotfiles\.console\icons\comspec.ico" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; default" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -99,8 +99,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio x64 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x86" init_dir="%WORKDIR%"/>
+		<tab title="Visual Studio x64 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x86" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -108,8 +108,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio x86 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x64" init_dir="%WORKDIR%"/>
+		<tab title="Visual Studio x86 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x64" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -117,8 +117,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Powershell" icon="%WORKDIR%\dotfiles\.console\icons\powershell.ico">
-			<console shell="powershell.exe" init_dir="%WORKDIR%"/>
+		<tab title="Powershell" icon="%WORKDIR%\dotfiles\.console\icons\powershell.ico" use_default_icon="0">
+			<console shell="powershell.exe" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="37" b="74">
 				<image file="" relative="0" extend="0" position="0">
@@ -126,8 +126,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio x86 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 x86" init_dir="%WORKDIR%"/>
+		<tab title="Visual Studio x86 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 x86" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -135,8 +135,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio x64 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 amd64" init_dir="%WORKDIR%"/>
+		<tab title="Visual Studio x64 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 amd64" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -144,8 +144,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Python" icon="%WORKDIR%\dotfiles\.console\icons\python.ico">
-			<console shell="%comspec% /c &quot;python.exe&quot; " init_dir="%WORKDIR%"/>
+		<tab title="Python" icon="%WORKDIR%\dotfiles\.console\icons\python.ico" use_default_icon="0">
+			<console shell="%comspec% /c &quot;python.exe&quot; " init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="4" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="50" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -153,8 +153,17 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Xbox 360" icon="%WORKDIR%\dotfiles\.console\icons\XDK.ico">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; xdk" init_dir="%WORKDIR%"/>
+		<tab title="Xbox 360" icon="%WORKDIR%\dotfiles\.console\icons\XDK.ico" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; xdk" init_dir="%WORKDIR%" run_as_user="0" user=""/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		<tab title="Git Bash" icon="%WORKDIR%\dotfiles\.console\icons\git.ico" use_default_icon="0">
+			<console shell="%comspec% /c &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; git" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">

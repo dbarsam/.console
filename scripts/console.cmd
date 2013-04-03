@@ -70,6 +70,17 @@ for %%p in ("%PROGRAMFILES%" "%PROGRAMFILES(x86)%") do (
 goto ERROR
 
 REM ==============
+:GIT
+for %%p in ("%PROGRAMFILES%" "%PROGRAMFILES(x86)%") do (
+    if exist %%p\"Git\bin\sh.exe" (
+        %%p\"Git\bin\sh.exe" --login -i
+        goto EXIT
+    )
+)
+goto ERROR
+
+
+REM ==============
 REM Error Handling
 REM ==============
 :ERROR

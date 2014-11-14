@@ -60,6 +60,16 @@ for %%p in ("%PROGRAMFILES%" "%PROGRAMFILES(x86)%") do (
 goto ERROR
 
 REM ==============
+:VS2012
+for %%p in ("%PROGRAMFILES%" "%PROGRAMFILES(x86)%") do (
+    if exist %%p"\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" (
+        call %%p"\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" %PARAMS%
+        goto EXIT
+    )
+)
+goto ERROR
+
+REM ==============
 :XDK
 for %%p in ("%PROGRAMFILES%" "%PROGRAMFILES(x86)%") do (
     if exist %%p"\Microsoft Xbox 360 SDK\bin\win32\xdkenv.bat" (

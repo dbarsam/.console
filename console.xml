@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <settings>
-	<console change_refresh="10" refresh="100" rows="60" columns="250" buffer_rows="1000" buffer_columns="0" shell="" init_dir="%WORKDIR%" start_hidden="1" save_size="0">
+	<console change_refresh="10" refresh="100" rows="60" columns="200" buffer_rows="1000" buffer_columns="0" shell="" init_dir="%WORKDIR%" start_hidden="1" save_size="0">
 		<colors>
 			<color id="0" r="0" g="0" b="0"/>
 			<color id="1" r="0" g="0" b="128"/>
@@ -99,24 +99,6 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio x64 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico" use_default_icon="0">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x86" init_dir="%WORKDIR%" run_as_user="0" user=""/>
-			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
-				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="0" r="0" g="0" b="0"/>
-				</image>
-			</background>
-		</tab>
-		<tab title="Visual Studio x86 (2008)" icon="%WORKDIR%\dotfiles\.console\icons\vs2008.ico" use_default_icon="0">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2008 x64" init_dir="%WORKDIR%" run_as_user="0" user=""/>
-			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
-				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="0" r="0" g="0" b="0"/>
-				</image>
-			</background>
-		</tab>
 		<tab title="Powershell" icon="%WORKDIR%\dotfiles\.console\icons\powershell.ico" use_default_icon="0">
 			<console shell="powershell.exe" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
@@ -126,7 +108,7 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio x86 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico" use_default_icon="0">
+    	<tab title="Visual Studio 2010 (x86)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico" use_default_icon="0">
 			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 x86" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
@@ -135,8 +117,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio x64 (2010)" icon="%WORKDIR%\dotfiles\.console\icons\vs2010.ico" use_default_icon="0">
-			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2010 amd64" init_dir="%WORKDIR%" run_as_user="0" user=""/>
+		<tab title="Visual Studio 2012 (x64)" icon="%WORKDIR%\dotfiles\.console\icons\vs2012.ico" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;%WORKDIR%\dotfiles\.console\scripts\console.cmd&quot;&quot; vs2012 amd64" init_dir="%WORKDIR%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
